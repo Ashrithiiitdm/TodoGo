@@ -8,7 +8,6 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
-	"github.com/joho/godotenv"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
@@ -27,11 +26,11 @@ func main() {
 	fmt.Println("Hello, World!")
 
 	// Initialize MongoDB connection and collection here
-	err := godotenv.Load()
+	// err := godotenv.Load()
 
-	if err != nil {
-		log.Fatal("Error loading .env file", err)
-	}
+	// if err != nil {
+	// 	log.Fatal("Error loading .env file", err)
+	// }
 
 	MONGO_URI := os.Getenv("MONGO_URI")
 
