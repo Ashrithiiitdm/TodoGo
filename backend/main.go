@@ -71,6 +71,6 @@ func main() {
 		port = ":8000"
 	}
 
-	log.Fatal(app.Listen(port))
+	log.Fatal(app.Listen(":" + port))
 }
 
